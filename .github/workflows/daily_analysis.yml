@@ -61,6 +61,8 @@ jobs:
           # ==========================================
           # AI 配置
           # ==========================================
+          # add a new variable
+          LITELLM_CONFIG:${{ vars.LITELLM_CONFIG || '' }}
           # Gemini AI（主选）
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || secrets.GEMINI_MODEL || 'gemini-3-flash-preview' }}
