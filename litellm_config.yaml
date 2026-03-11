@@ -17,10 +17,10 @@
 
 model_list:
   # --- AIHubmix (OpenAI 兼容，一个 Key 使用多种模型) ---
-  - model_name: gemini/gemini-3-flash-preview-free
+  - model_name: openai/gpt-4.1-free
     litellm_params:
-      model: gemini/gemini-3-flash-preview-free
-      api_key: "os.environ/AIHUBMIX_KEY"
+      model: openai/gpt-4.1-free
+      api_key: "os.environ/AIHUBMIX_KEY"  
       api_base: https://aihubmix.com/v1
       
   - model_name: kimi/kimi-for-coding-free  
